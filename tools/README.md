@@ -4,6 +4,15 @@
 |---|---|---|
 |Nmap|ホスト発見、ポートスキャン、起動サービス判定|https://nmap.org/|
 
+
+# initial access/侵入
+
+|Name|Situation|Link|
+|---|---|---|
+|Nishang|ターゲットがPowerShellを使用する場合に使えるスクリプト集|https://github.com/samratashok/nishang|
+|msfvenom|ペイロードを作成できるツール||
+
+
 # privilege escalation/特権昇格
 
 |Name|Situation|Link|
