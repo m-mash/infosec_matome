@@ -1,5 +1,10 @@
 # nmap
 
+## 基本
+```
+$ nmap -A -p- <ip address>
+```
+
 ## options
 
 

